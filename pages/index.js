@@ -6,6 +6,7 @@ const HomePage = () => {
   const BLOG_POSTS = [
     {
       id: 1,
+      slug: "first-blog",
       title: "First Blog",
       image:
         "https://images.unsplash.com/photo-1526568929-7cdd510e77fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
@@ -14,6 +15,7 @@ const HomePage = () => {
     },
     {
       id: 2,
+      slug: "second-blog",
       title: "Second Blog",
       image:
         "https://images.unsplash.com/photo-1526568929-7cdd510e77fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
@@ -27,6 +29,7 @@ const HomePage = () => {
       {BLOG_POSTS.map((blog) => (
         <div key={blog.id} className="flex flex-col">
           <BlogItem
+            slug={blog.slug}
             title={blog.title}
             image={blog.image}
             description={blog.description}

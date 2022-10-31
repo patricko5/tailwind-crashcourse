@@ -1,7 +1,7 @@
 
 const addBlog = () => {
   return (
-    <div>add blog</div>
+    <div className="font-Montserrat">add blog</div>
   )
 }
 
